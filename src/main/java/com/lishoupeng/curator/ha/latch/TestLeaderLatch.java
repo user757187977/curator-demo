@@ -1,7 +1,7 @@
 package com.lishoupeng.curator.ha.latch;
 
-import demo.curator.ha.CuratorFactory;
-import demo.curator.ha.Utils;
+import com.lishoupeng.curator.ha.CuratorFactory;
+import com.lishoupeng.curator.ha.Utils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

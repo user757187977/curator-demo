@@ -1,7 +1,7 @@
 package com.lishoupeng.curator.ha.election;
 
-import demo.curator.ha.CuratorFactory;
-import demo.curator.ha.Utils;
+import com.lishoupeng.curator.ha.CuratorFactory;
+import com.lishoupeng.curator.ha.Utils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.utils.CloseableUtils;
 import org.junit.After;

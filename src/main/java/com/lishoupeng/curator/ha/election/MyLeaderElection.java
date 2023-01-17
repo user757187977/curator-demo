@@ -1,8 +1,8 @@
 package com.lishoupeng.curator.ha.election;
 
-import demo.curator.ha.Constant;
-import demo.curator.ha.LeaderDriver;
-import demo.curator.ha.Utils;
+import com.lishoupeng.curator.ha.Constant;
+import com.lishoupeng.curator.ha.LeaderDriver;
+import com.lishoupeng.curator.ha.Utils;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.apache.curator.framework.CuratorFramework;

@@ -1,9 +1,8 @@
 package com.lishoupeng.curator.ha.latch;
 
-import demo.curator.ha.Constant;
-import demo.curator.ha.LeaderDriver;
+import com.lishoupeng.curator.ha.Constant;
+import com.lishoupeng.curator.ha.LeaderDriver;
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.leader.LeaderLatch;
 import org.apache.curator.framework.recipes.leader.LeaderLatchListener;
@@ -16,7 +15,6 @@ import java.util.concurrent.TimeUnit;
  * @Author lishoupeng
  * @Date 2023/1/17 11:03
  */
-@Slf4j
 @Data
 public class MyLeaderLatch implements LeaderLatchListener, LeaderDriver {
 
@@ -68,7 +66,6 @@ public class MyLeaderLatch implements LeaderLatchListener, LeaderDriver {
         try {
             leaderLatch.close();
         } catch (IOException e) {
-            log.error("Error close:", e);
         }
     }
 
@@ -90,7 +87,6 @@ public class MyLeaderLatch implements LeaderLatchListener, LeaderDriver {
         try {
             this.leaderLatch.await(10, TimeUnit.SECONDS);
         } catch (InterruptedException e) {
-            log.error("await got error", e);
             Thread.currentThread().interrupt();
         }
     }
